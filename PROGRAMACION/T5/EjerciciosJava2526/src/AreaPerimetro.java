@@ -22,6 +22,20 @@ public class AreaPerimetro {
 		System.out.println("5.- Salir");
 		opcion = sc.nextInt();
 		
+		/*System.out.println("""
+                ==========================
+                Seleccione una opción:
+                1.- Cuadrado
+                2.- Rectángulo
+                3.- Triángulo
+                4.- Círculo
+                5.- Salir
+                ==========================
+                """);
+
+        System.out.print("Opción: ");
+        opcion = sc.nextInt();*/
+		
 		switch (opcion) {
 		case 1: System.out.println("Selecciones una opción");
 				System.out.println("A.- Área");
@@ -50,7 +64,40 @@ public class AreaPerimetro {
 			
 		default: System.out.println("Opcion incorrecta");	
 	}
-
+		
+		switch (opcion) {
+        case 1 -> {
+            System.out.print("Ingrese el lado del cuadrado: ");
+            double lado = sc.nextDouble();
+            double area = lado * lado;
+            System.out.println("Área del cuadrado = " + area);
+        }
+        case 2 -> {
+            System.out.print("Ingrese la base del rectángulo: ");
+            double base = sc.nextDouble();
+            System.out.print("Ingrese la altura del rectángulo: ");
+            double altura = sc.nextDouble();
+            double area = base * altura;
+            System.out.println("Área del rectángulo = " + area);
+        }
+        case 3 -> {
+            System.out.print("Ingrese la base del triángulo: ");
+            double base = sc.nextDouble();
+            System.out.print("Ingrese la altura del triángulo: ");
+            double altura = sc.nextDouble();
+            double area = (base * altura) / 2;
+            System.out.println("Área del triángulo = " + area);
+        }
+        case 4 -> {
+            System.out.print("Ingrese el radio del círculo: ");
+            double radio = sc.nextDouble();
+            double area = Math.PI * Math.pow(radio, 2);
+            System.out.println("Área del círculo = " + area);
+        }
+        case 5 -> System.out.println("Saliendo del programa...");
+        default -> System.out.println("Opción no válida, intente de nuevo.");
+    }
+		
 	}
 
 }

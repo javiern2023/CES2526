@@ -12,6 +12,7 @@ public class Operadores {
 		double num = 9.55678543;
 		System.out.println(df.format(num));
 		
+		
 		// Petición de datos por teclado
 		System.out.print("Dime el primer número: ");
 		num1 = sc.nextDouble();
@@ -28,6 +29,8 @@ public class Operadores {
 		System.out.println("La multiplicacion de "+num1+" por "+num2+" por "+num3+" es "+(num1*num2*num3));
 		System.out.println("La division de "+num1+" entre "+num2+" es "+(num1/num2));
 
+		//Operadores númericos
+		// +, -, *, /, %
 	}
 
 }
