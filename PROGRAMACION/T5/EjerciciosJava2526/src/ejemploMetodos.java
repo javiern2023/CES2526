@@ -9,6 +9,7 @@ public class ejemploMetodos {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Dime el primer número: ");
+		
 		num1=sc.nextInt();
 		System.out.print("Dime el segundo número: ");
 		num2=sc.nextInt();
